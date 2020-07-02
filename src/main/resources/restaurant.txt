@@ -1,0 +1,15 @@
+:::::::::::::::::::::::::::::::::::
+:::::::::::::M E N U:::::::::::::::
+	Idly			$3
+	Vada			$4
+	Poori			$6
+	CholeBature		$8
+	Samosa			$4
+	PaniPoori		$5
+	MasalaDosa		$5
+	PlainDosa		$4
+	KaramDosa		$6
+	MirchiBajji		$4
+	Pakora			$3
+:::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::
