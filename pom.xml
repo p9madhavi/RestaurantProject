@@ -8,7 +8,7 @@
     <artifactId>RestaurantProject</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <final-name>RestaurantApp</final-name>
+        <final-name>RestaurantApp1</final-name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler-plugin-version>3.1</compiler-plugin-version>
         <jdk-version>1.8</jdk-version>
@@ -39,7 +39,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.apps.RestaurantApp</mainClass>
+                    <mainClass>com.apps.RestaurantApp1</mainClass>
                 </configuration>
             </plugin>
         </plugins>

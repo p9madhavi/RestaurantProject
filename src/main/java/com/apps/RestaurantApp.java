@@ -31,10 +31,10 @@ public class RestaurantApp {
             restLines.add("\tKaramDosa\t\t" + props.getProperty("KaramDosa"));
             restLines.add("\tMirchiBajji\t\t" +props.getProperty("MirchiBajji"));
             restLines.add("\tPakora\t\t\t" + props.getProperty("Pakora"));
-            restLines.add(":::::::::::::::::::::::::::::::::::");
+            restLines.add("::::R E S T A U R A N T A P P ::::");
             restLines.add(":::::::::::::::::::::::::::::::::::");
 
-            FileHelper.writeLines(restLines,RestMenuFile);
+            FileHelper.writeToFile(restLines,RestMenuFile);
             String masalaDosa =props.getProperty("MasalaDosa");
             System.out.println("The Price for MasalaDosa:: " + masalaDosa);
 
@@ -49,7 +49,5 @@ public class RestaurantApp {
         }catch (IOException aExp){
             System.out.println("IO exception");
         }
-
-
     }
 }
