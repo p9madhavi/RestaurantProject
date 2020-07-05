@@ -11,7 +11,7 @@ public class RestaurantApp1 {
     public static void main(String[] args) {
 
         Properties props = new Properties();
-        File aFile = new File("C:\\Users\\Jagadeesh\\Madhavi\\Files\\Restaurantfile.txt");
+        File aFile = new File("src\\main\\resources\\RestaurantTemplateFile.template");
         File bFile = new File("src\\main\\resources\\restaurantmenu.cfg");
         File cFile = new File("src\\main\\resources\\restaurantmenu.txt");
         List<String> lines = new ArrayList<String>();
