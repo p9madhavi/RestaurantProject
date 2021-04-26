@@ -5,15 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>RestaurantProject</artifactId>
+    <artifactId>APIProject</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <final-name>RestaurantApp1</final-name>
+        <final-name>APIProject</final-name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler-plugin-version>3.1</compiler-plugin-version>
         <jdk-version>1.8</jdk-version>
         <exec-plugin-version>1.1.1</exec-plugin-version>
         <commons-io-version>2.7</commons-io-version>
+        <testng-version>6.9.8</testng-version>
+        <surefire-plugin-version>2.12.4</surefire-plugin-version>
+        <cuke-testng-version>5.6.0</cuke-testng-version>
     </properties>
     <build>
         <finalName>${final-name}</finalName>
@@ -39,7 +42,17 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.apps.RestaurantApp1</mainClass>
+                    <mainClass>com.apps.UserApp</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire-plugin-version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src\test\resources\TestNG.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
@@ -50,7 +63,28 @@
             <artifactId>commons-io</artifactId>
             <version>${commons-io-version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.8</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cuke-testng-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cuke-testng-version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.3</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
-
-
 </project>
